@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin-left:40px ;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #dfd5d5;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+    }
+
+    .about img {
+      width: 150px;
+      border-radius: 50%;
+      margin-right: 30%;
+
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skills ul {
+      columns:2;
+      gap:1px;
+      list-style: none;
+      padding-left:200px;
+    }
+
+    .skills li::before {
+      content: "✔";
+      margin-right: 8px;
+      color: green;
+    }
+
+    .projects .project {
+      margin-bottom: 30px;
+    }
+
+    .projects img {
+    
+      background: #f0f0f0;
+      padding: 10px 20px;
+      border-radius: 8px;
+      width: 350px;
+      display: block;
+    }
+
+    .resume a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #2a5298;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      font-size: 1em;
+      width: 100%;
+    }
+
+    .contact button {
+      padding: 10px;
+      background-color: #2a5298;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #1e3c72;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 5px;
+    }
+    .project{
+      padding: 00;
+      border-radius: 8px;
+      width: 250px;
+    }
+    .projects{
+      display: flex;
+      justify-content: center;
+      gap: 300px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 600px) {
+      .skills ul {
+        columns: 1;
+      }
+
+      .about {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>KAAVIYA</h1>
+    <p>Web Developer | Designer </p>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    
+    <img src="./profile picture.png" alt="Profile Photo">
+    
+    <div>
+      <h2>About Me</h2>
+      <p>Hello! I'm KAAVIYA, a passionate front-end developer with experience in building responsive web applications using HTML, CSS, JavaScript, and modern frameworks.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5 & CSS3</li>
+      <li>JavaScript</li>
+      <li>React.js</li>
+      <li>Bootstrap</li>
+      <li>Responsive Design</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+   
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+    <div class="project">
+      <img src="./project one .png" alt="PROJECT ONE">
+      <h3>PROJECT ONE</h3>
+      <p>A short description about project</P></div>
+     <div class="project">
+      <img src="./project two .png" alt="PROJECT TWO">
+      <h3>PROJECT TWO</h3>
+      <p>A short description about project</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section class="resume">
+    <h2>Resume</h2>
+    <p>Click below to download my resume:</p>
+    <a href="resume.pdf" download>Download Resume (PDF)</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: kaaviya@example.com</p>
+    <p>Phone: +1234567890</p>
+    <p>LinkedIn: kaaviya-a12345</p>
+    <form>
+      
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 KAAVIYA. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
